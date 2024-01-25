@@ -107,7 +107,6 @@ pub fn main() -> Result<()> {
     let args: Vec<String> = env::args().collect();
 
 
-        //let file_result = File::open("C:\\Users\\cnc\\Downloads\\uesave-x86_64-pc-windows-msvc\\8B9E670B4FDCBD037E1323A482D41CFC\\Level.sav.gvas");
         if &args[1] == "raw2json"{
                 let file_result = File::open(&args[2]);
     if let Ok(mut file) = file_result {
@@ -137,14 +136,6 @@ pub fn main() -> Result<()> {
     }
             
     }
-       
-
-
-
-         
-
-    
-    
     let args = Args::parse();
 
     match args.action {
